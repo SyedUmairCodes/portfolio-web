@@ -1,6 +1,5 @@
 /*=============== GOOGLE FONTS ===============*/
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 /*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 3.5rem;
@@ -8,11 +7,11 @@
   --hue: 0;
   --title-color: #FFF;
   --body-color: #000;
-  --container-color: #000;
+  --card-color: #1A1A1A;
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
-  --body-font: "Nunito", sans-serif;
+  --body-font: "Inter", sans-serif;
   --biggest-font-size: 3rem;
   --big-font-size: 1.5rem;
   --h1-font-size: 1.5rem;
@@ -279,6 +278,7 @@ img {
 .home__scroll-box i {
   color: var(--title-color);
   animation: scroll-down 3s infinite;
+  overflow: hidden;
 }
 
 /* Animate scroll icon */
@@ -287,7 +287,7 @@ img {
     transform: translateY(0);
   }
   50%{
-    transform: translateY(0.5rem);
+    transform: translateY(0.3rem);
   }
   100%{
     transform: translateY(0rem);
@@ -298,8 +298,47 @@ img {
 
 
 /*=============== WORKS ===============*/
+.work{
+  background-color: var(--body-color);
+}
+.work__card{
+  background-color: var(--title-color);
+}
+.work__link{
+  display: block;
+  position: relative;
+  background-color: var(--card-color);
+  padding:  2rem 1.5rem 1.5rem 1.5rem;
+  text-align: center;
+  color: var(--title-color);
+  transition: transform 0.4s;
+}
+.work__title{
+  font-size: var(--h3-font-size);
+  margin-bottom: 0.75rem;
+}
+.work__description{
+  margin-bottom: 1.5rem;
+}
 
+.work__image{
+  align-items:center;
+}
 
+.work__link i{
+  position: absolute;
+  top: 1.8rem;
+  right: 1.5rem;
+  font-size: 1.5rem;
+  color: var(--title-color);
+}
+
+.work__link:hover{
+  transform: translateY(-0.35rem);
+}
+.work__link:hover i {
+  transform: translateY(-0.5rem);
+}
 /*=============== INFO ===============*/
 
 
