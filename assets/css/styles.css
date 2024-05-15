@@ -210,16 +210,89 @@ img {
 }
 
 /* Add blur header */
-
+.scroll-header::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: hsla(var(--hue), 70%, 4%, 0.2);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
 
 /* Active link */
 
 
 /*=============== HOME ===============*/
+.home__container{
+  row-gap:2rem;
+  padding-top:1rem;
+}
 
+.home__img{
+  width: 220px;
+  justify-self: center;
+  mask-image: linear-gradient(to bottom, #000, 60%, transparent 100%);
+}
+.home__name{
+  font-size: var(--biggest-font-size);
+  text-align: center;
+  font-weight: var(--font-bold);
+  word-break: break-word;
+  margin-bottom: 1rem;
+}
+
+.home__title{
+  position: relative;
+  font-size: var(--big-font-size);
+  text-align: center;
+  color:var(--title-color);
+}
+
+.home__scroll{
+  color: var(--title-color);
+  display: inline-flex;
+  column-gap: 0.5rem;
+  align-items: center;
+  justify-self: center;
+  margin-top: 3rem;
+}
+
+.home__scroll-text{
+  font-weight: var(--font-semi-bold);
+}
+
+.home__scroll-box{
+  background-color: var(--body-color);
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  font-size: 1.5rem;
+  overflow: hidden;
+  border-radius: 50%
+}
+
+.home__scroll-box i {
+  color: var(--title-color);
+  animation: scroll-down 3s infinite;
+}
 
 /* Animate scroll icon */
-
+@keyframes scroll-down {
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(0.5rem);
+  }
+  100%{
+    transform: translateY(0rem);
+  }
+}
 
 /*=============== BUTTON ===============*/
 
