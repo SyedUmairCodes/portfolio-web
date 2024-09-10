@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
-import { Inter, Montserrat } from "next/font/google";
+import { Inter, Nunito_Sans } from "next/font/google";
 import "./globals.css";
 import { twMerge } from "tailwind-merge";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
-const montserrat = Montserrat({ subsets: ["latin"], variable: "--font-serif" });
+const nunito = Nunito_Sans({
+  subsets: ["latin"],
+  variable: "--font-serif",
+});
 
 export const metadata: Metadata = {
   title: "Syed Umair Ali | Full-stack developer",
@@ -21,8 +24,8 @@ export default function RootLayout({
       <body
         className={twMerge(
           inter.variable,
-          montserrat.variable,
-          "bg-gray-900 text-white antialiased font-sans"
+          nunito.variable,
+          "bg-black text-white antialiased font-sans"
         )}
       >
         {children}

@@ -1,13 +1,10 @@
 import ArrowDown from "@/public/assets/icons/arrow-down.svg";
-import HeroImage from "@/public/assets/images/memoji-computer.png";
-import Image from "next/image";
 export const HeroSection = () => {
   return (
-    <div className="py-32 md:py-48">
+    <div className="py-36 md:py-40 lg:py-55 overflow-x-clip">
       <div className="container">
         <div className="flex flex-col items-center">
-          {/* <Image src={HeroImage} alt="Hero image" className="size-[100px]" /> */}
-          <div className="bg-gray-950 border-gray-800 rounded-full px-4 py-1.5 inline-flex items-center gap-4">
+          <div className="bg-neutral-900 border-gray-800 rounded-full px-4 py-1.5 inline-flex items-center gap-4">
             <div className="bg-green-500 rounded-full size-2.5"></div>
             <div className="text-sm font-medium">
               Available for new projects
@@ -15,10 +12,10 @@ export const HeroSection = () => {
           </div>
         </div>
         <div className="max-w-lg mx-auto">
-          <h1 className=" text-3xl md:text-5xl text-center font-sans font-bold mt-8 tracking-wide">
+          <h1 className=" text-3xl md:text-5xl text-center font-serif font-bold mt-8 tracking-wide">
             Building Exceptional User Experiences
           </h1>
-          <p className="mt-4 text-center text-white/60 md:text-lg">
+          <p className="mt-4 text-center text-white/60 md:text-lg font-sans">
             I specialize in transforming user requirements into
             production-ready, eye-catching, and user-friendly applications.
           </p>
