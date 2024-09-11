@@ -25,7 +25,7 @@ export default function RootLayout({
         className={twMerge(
           inter.variable,
           nunito.variable,
-          "bg-black text-white antialiased font-sans"
+          "bg-neutral-900 text-white antialiased font-sans"
         )}
       >
         {children}
