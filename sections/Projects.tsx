@@ -1,11 +1,13 @@
 import darkSaasLandingPage from "@/public/assets/images/dark-saas-landing-page.png";
 import lightSaasLandingPage from "@/public/assets/images/light-saas-landing-page.png";
 import aiStartupLandingPage from "@/public/assets/images/ai-startup-landing-page.png";
+import CheckIcon from "@/public/assets/icons/check-circle.svg";
+import ArrowUp from "@/public/assets/icons/arrow-up-right.svg";
 import Image from "next/image";
 
 const portfolioProjects = [
   {
-    company: "CodeHive",
+    company: "Code Hive",
     year: "2024",
     title: "Online Forum Platform for Developers",
     features: [
@@ -44,45 +46,58 @@ const portfolioProjects = [
 
 export const ProjectsSection = () => {
   return (
-    <div>
+    <section className="pb-14">
       <div className="container">
         <div className="flex justify-center">
-          <p className="uppercase font-semibold tracking-widest bg-gradient-to-r  from-gray-100 to-stone-300 text-transparent bg-clip-text text-center">
+          <p className="uppercase font-semibold tracking-widest text-neutral-300 text-center">
             Recent Works
           </p>
         </div>
-        <h1 className="font-serif text-3xl mt-6 text-center">
+        <h1 className="font-serif text-3xl font-semibold mt-6 text-center">
           Featured Projects
         </h1>
         <p className="text-center text-white/60 mt-4">
-          Some of the awesome projects I&apos;ve worked on recently
+          The awesome projects I&apos;ve made.
         </p>
-        <div className="flex flex-col mt-10">
+        <div className="flex flex-col mt-10 gap-12">
           {portfolioProjects.map((project) => (
             <div
               key={project.title}
-              className="bg-neutral-950 rounded-3xl border-neutral-400 border-4 relative"
+              className="bg-neutral-950 rounded-3xl border-neutral-400 border-4 relative px-8 pt-8"
             >
-              <div className="flex">
-                <div className="bg-gradient-to-r from-gray-100 to-stone-300 inline-flex bg-clip-text text-transparent font-bold uppercase gap-2 tracking-widest text-sm">
-                  <span>{project.company}</span>
-                  <span>{project.year}</span>
-                </div>
+              <div className=" text-neutral-300  font-bold uppercase gap-2 tracking-widest text-center">
+                <span>{project.company}</span>
               </div>
-              <h3>{project.title}</h3>
-              <ul>
+              <h3 className="font-semibold font-serif text-2xl mt-2 text-center">
+                {project.title}
+              </h3>
+              <hr className="border-t-2 border-white/50 mt-2" />
+              <ul className="flex flex-col gap-4 mt-4">
                 {project.features.map((feature) => (
-                  <li key={feature.title}>{feature.title}</li>
+                  <li
+                    className="flex gap-2 text-sm text-white"
+                    key={feature.title}
+                  >
+                    <CheckIcon className="size-5" />
+                    <span>{feature.title}</span>
+                  </li>
                 ))}
               </ul>
               <a href={project.link}>
-                <button>Live preview</button>
+                <button className="bg-white text-gray-900 h-12 w-full rounded-full font-semibold inline-flex items-center justify-center gap-2 mt-8">
+                  <span>Live preview</span>
+                  <ArrowUp className="size-4" />
+                </button>
               </a>
-              <Image src={project.image} alt={project.title} />
+              <Image
+                src={project.image}
+                alt={project.title}
+                className="mt-8 mb-4"
+              />
             </div>
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
