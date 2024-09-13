@@ -13,7 +13,7 @@ export const HeroSection = () => {
         </div>
         <div className="max-w-lg mx-auto">
           <h1 className=" text-3xl md:text-5xl text-center font-serif font-bold mt-8 tracking-wide">
-            Building Exceptional User Experiences
+            Syed Umair Ali
           </h1>
           <p className="mt-4 text-center text-white md:text-lg font-sans">
             I specialize in transforming user requirements into
