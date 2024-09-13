@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
-import { Inter, Nunito_Sans } from "next/font/google";
+import { Inter, Fira_Code } from "next/font/google";
 import "./globals.css";
 import { twMerge } from "tailwind-merge";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
-const nunito = Nunito_Sans({
+const FiraCode = Fira_Code({
   subsets: ["latin"],
   variable: "--font-serif",
+  weight: ["300", "400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -24,8 +25,8 @@ export default function RootLayout({
       <body
         className={twMerge(
           inter.variable,
-          nunito.variable,
-          "bg-neutral-900 text-white antialiased font-sans"
+          FiraCode.variable,
+          "bg-black text-white antialiased font-sans"
         )}
       >
         {children}

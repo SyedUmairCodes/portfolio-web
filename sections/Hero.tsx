@@ -1,10 +1,10 @@
 import ArrowDown from "@/public/assets/icons/arrow-down.svg";
 export const HeroSection = () => {
   return (
-    <div className="py-36 md:py-40 lg:py-55 overflow-x-clip">
+    <div className="py-36 md:py-40 overflow-x-clip">
       <div className="container">
         <div className="flex flex-col items-center">
-          <div className="bg-neutral-950 border-neutral-400 border-2 rounded-full px-4 py-1.5 inline-flex items-center gap-4">
+          <div className="bg-neutral-900 border-neutral-400 border-2 rounded-full px-4 py-1.5 inline-flex items-center gap-4">
             <div className="bg-green-500 rounded-full size-2.5"></div>
             <div className="text-sm font-medium">
               Available for new projects
