@@ -53,24 +53,18 @@ export const ProjectsSection = () => {
             Recent Works
           </p>
         </div>
-        <h2 className="font-serif text-3xl md:text-5xl mt-6 text-center">
+        <h2 className="font-serif font-semibold text-3xl md:text-5xl mt-6 text-center">
           Featured Projects
         </h2>
-        <p className="text-center md:text-lg lg:text-xl text-white/60 mt-4 max-w-md mx-auto">
+        <p className="text-center md:text-lg lg:text-xl text-white mt-4 max-w-md mx-auto">
           I transform concepts into engaging real-world digital experiences.
         </p>
         <div className="flex flex-col mt-10 md:mt-20 gap-12">
           {portfolioProjects.map((project) => (
             <div
               key={project.title}
-              className="bg-neutral-950 rounded-3xl border-neutral-400 border-2 relative px-8 pt-8 md:pt-12 md:px-10 lg:pt-16 lg:px-20 overflow-hidden"
+              className="bg-slate-800 rounded-3xl border-slate-500 border-2 relative px-8 pt-8 md:pt-12 md:px-10 lg:pt-16 lg:px-20 overflow-hidden"
             >
-              <div
-                className="absolute inset-0 -z-10 opacity-5"
-                style={{
-                  backgroundImage: `url(${grainImage.src})`,
-                }}
-              ></div>
               <div className="lg:grid lg:grid-cols-2 lg:gap-16 ">
                 <div className="lg:pb-16">
                   <div className=" text-neutral-300  font-bold uppercase gap-2 tracking-widest text-center">

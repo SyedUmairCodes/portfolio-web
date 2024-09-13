@@ -4,7 +4,7 @@ export const HeroSection = () => {
     <div className="py-36 md:py-40 overflow-x-clip">
       <div className="container">
         <div className="flex flex-col items-center">
-          <div className="bg-neutral-900 border-neutral-400 border-2 rounded-full px-4 py-1.5 inline-flex items-center gap-4">
+          <div className="bg-slate-800 border-neutral-400 border-2 rounded-full px-4 py-1.5 inline-flex items-center gap-4">
             <div className="bg-green-500 rounded-full size-2.5"></div>
             <div className="text-sm font-medium">
               Available for new projects
@@ -15,13 +15,13 @@ export const HeroSection = () => {
           <h1 className=" text-3xl md:text-5xl text-center font-serif font-bold mt-8 tracking-wide">
             Building Exceptional User Experiences
           </h1>
-          <p className="mt-4 text-center text-white/60 md:text-lg font-sans">
+          <p className="mt-4 text-center text-white md:text-lg font-sans">
             I specialize in transforming user requirements into
             production-ready, eye-catching, and user-friendly applications.
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
-          <button className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-full">
+          <button className="inline-flex items-center gap-2 border-2 border-white/15 px-6 h-12 rounded-full">
             <span className="font-semibold">Explore my work</span>
             <ArrowDown className="size-4" />
           </button>

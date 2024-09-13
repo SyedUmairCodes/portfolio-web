@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Inter, Fira_Code } from "next/font/google";
+import { Inter, Karla } from "next/font/google";
 import "./globals.css";
 import { twMerge } from "tailwind-merge";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
-const FiraCode = Fira_Code({
+const karla = Karla({
   subsets: ["latin"],
   variable: "--font-serif",
   weight: ["300", "400", "500", "600", "700"],
@@ -25,8 +25,8 @@ export default function RootLayout({
       <body
         className={twMerge(
           inter.variable,
-          FiraCode.variable,
-          "bg-black text-white antialiased font-sans"
+          karla.variable,
+          "bg-slate-900 text-white antialiased font-sans"
         )}
       >
         {children}
