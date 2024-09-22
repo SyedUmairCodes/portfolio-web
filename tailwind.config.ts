@@ -21,7 +21,12 @@ const config: Config = {
       },
     },
     extend: {
-      fontFamily: { sans: "var(--font-sans)", serif: "var(--font-serif)" },
+      fontFamily: { sans: "var(--font-sans)" },
+      colors: {
+        main: "#15161A",
+        secondary: "#343539",
+        stripe: "#1b81ef",
+      },
     },
   },
   plugins: [],

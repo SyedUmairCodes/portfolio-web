@@ -1,7 +1,6 @@
 import darkSaasLandingPage from "@/public/assets/images/dark-saas-landing-page.png";
 import lightSaasLandingPage from "@/public/assets/images/light-saas-landing-page.png";
 import aiStartupLandingPage from "@/public/assets/images/ai-startup-landing-page.png";
-import grainImage from "@/public/assets/images/grain.jpg";
 import CheckIcon from "@/public/assets/icons/check-circle.svg";
 import ArrowUp from "@/public/assets/icons/arrow-up-right.svg";
 import Image from "next/image";
@@ -53,7 +52,7 @@ export const ProjectsSection = () => {
             Recent Works
           </p>
         </div>
-        <h2 className="font-serif font-semibold text-3xl md:text-5xl mt-6 text-center">
+        <h2 className="font-sans font-semibold text-3xl md:text-5xl mt-6 text-center">
           Featured Projects
         </h2>
         <p className="text-center md:text-lg lg:text-xl text-white mt-4 max-w-md mx-auto">
@@ -63,14 +62,14 @@ export const ProjectsSection = () => {
           {portfolioProjects.map((project) => (
             <div
               key={project.title}
-              className="bg-slate-800 rounded-3xl border-slate-500 border-2 relative px-8 pt-8 md:pt-12 md:px-10 lg:pt-16 lg:px-20 overflow-hidden"
+              className="bg-main rounded-3xl border-secondary border-4 relative px-8 pt-8 md:pt-12 md:px-10 lg:pt-16 lg:px-20 overflow-hidden "
             >
               <div className="lg:grid lg:grid-cols-2 lg:gap-16 ">
                 <div className="lg:pb-16">
                   <div className=" text-neutral-300  font-bold uppercase gap-2 tracking-widest text-center">
                     <span>{project.company}</span>
                   </div>
-                  <h3 className="font-semibold font-serif text-2xl md:text-3xl mt-2 md:mt-5 text-center">
+                  <h3 className="font-semibold font-sans text-2xl md:text-3xl mt-2 md:mt-5 text-center">
                     {project.title}
                   </h3>
                   <hr className="border-t-2 border-white/30 mt-2 md:mt-5" />
@@ -86,7 +85,7 @@ export const ProjectsSection = () => {
                     ))}
                   </ul>
                   <a href={project.link}>
-                    <button className="bg-white text-gray-900 h-12 w-full md: w-auto px-4 rounded-full font-semibold inline-flex items-center justify-center gap-2 mt-8">
+                    <button className="bg-white text-gray-900 h-12 w-full md:w-auto px-4 rounded-full font-semibold inline-flex items-center justify-center gap-2 mt-8">
                       <span>Live preview</span>
                       <ArrowUp className="size-4" />
                     </button>

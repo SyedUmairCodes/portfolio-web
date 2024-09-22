@@ -1,9 +1,16 @@
 import ArrowDown from "@/public/assets/icons/arrow-down.svg";
+import HeaderImage from "@/public/assets/images/me.png";
+import Image from "next/image";
 export const HeroSection = () => {
   return (
     <div className="py-36 md:py-40 overflow-x-clip">
       <div className="container">
         <div className="flex flex-col items-center">
+          <Image
+            src={HeaderImage}
+            className="size-[100px]"
+            alt="header image"
+          />
           <div className="bg-slate-800 border-neutral-400 border-2 rounded-full px-4 py-1.5 inline-flex items-center gap-4">
             <div className="bg-green-500 rounded-full size-2.5"></div>
             <div className="text-sm font-medium">
@@ -12,7 +19,7 @@ export const HeroSection = () => {
           </div>
         </div>
         <div className="max-w-lg mx-auto">
-          <h1 className=" text-3xl md:text-5xl text-center font-serif font-bold mt-8 tracking-wide">
+          <h1 className=" text-3xl md:text-5xl text-center font-sans font-bold mt-8 tracking-wide">
             Syed Umair Ali
           </h1>
           <p className="mt-4 text-center text-white md:text-lg font-sans">

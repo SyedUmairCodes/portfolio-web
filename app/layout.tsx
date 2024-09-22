@@ -1,14 +1,9 @@
 import type { Metadata } from "next";
-import { Inter, Karla } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import { twMerge } from "tailwind-merge";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
-const karla = Karla({
-  subsets: ["latin"],
-  variable: "--font-serif",
-  weight: ["300", "400", "500", "600", "700"],
-});
 
 export const metadata: Metadata = {
   title: "Syed Umair Ali | Full-stack developer",
@@ -25,8 +20,7 @@ export default function RootLayout({
       <body
         className={twMerge(
           inter.variable,
-          karla.variable,
-          "bg-slate-900 text-white antialiased font-sans"
+          "bg-main text-white antialiased font-sans"
         )}
       >
         {children}
