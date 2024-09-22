@@ -1,5 +1,5 @@
 import ArrowDown from "@/public/assets/icons/arrow-down.svg";
-import HeaderImage from "@/public/assets/images/me.png";
+import HeaderImage from "@/public/assets/images/Me.png";
 import Image from "next/image";
 export const HeroSection = () => {
   return (
@@ -11,7 +11,7 @@ export const HeroSection = () => {
             className="size-[100px]"
             alt="header image"
           />
-          <div className="bg-slate-800 border-neutral-400 border-2 rounded-full px-4 py-1.5 inline-flex items-center gap-4">
+          <div className="bg-neutral-800 border-secondary border-2 rounded-full px-4 py-1.5 inline-flex items-center gap-4">
             <div className="bg-green-500 rounded-full size-2.5"></div>
             <div className="text-sm font-medium">
               Available for new projects
@@ -19,7 +19,7 @@ export const HeroSection = () => {
           </div>
         </div>
         <div className="max-w-lg mx-auto">
-          <h1 className=" text-3xl md:text-5xl text-center font-sans font-bold mt-8 tracking-wide">
+          <h1 className=" text-3xl md:text-5xl text-center font-sans font-semibold mt-8 tracking-wide">
             Syed Umair Ali
           </h1>
           <p className="mt-4 text-center text-white md:text-lg font-sans">
@@ -28,7 +28,7 @@ export const HeroSection = () => {
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
-          <button className="inline-flex items-center gap-2 border-2 border-white/15 px-6 h-12 rounded-full">
+          <button className="inline-flex items-center gap-2 border-2 border-secondary px-6 h-12 rounded-full">
             <span className="font-semibold">Explore my work</span>
             <ArrowDown className="size-4" />
           </button>

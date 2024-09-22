@@ -62,7 +62,7 @@ export const ProjectsSection = () => {
           {portfolioProjects.map((project) => (
             <div
               key={project.title}
-              className="bg-main rounded-3xl border-secondary border-4 relative px-8 pt-8 md:pt-12 md:px-10 lg:pt-16 lg:px-20 overflow-hidden "
+              className="bg-neutral-800 rounded-3xl border-secondary border-4 relative px-8 pt-8 md:pt-12 md:px-10 lg:pt-16 lg:px-20 overflow-hidden "
             >
               <div className="lg:grid lg:grid-cols-2 lg:gap-16 ">
                 <div className="lg:pb-16">
