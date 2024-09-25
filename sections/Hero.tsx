@@ -11,7 +11,7 @@ export const HeroSection = () => {
             className="size-[100px]"
             alt="header image"
           />
-          <div className="bg-neutral-800 border-secondary border-2 rounded-full px-4 py-1.5 inline-flex items-center gap-4">
+          <div className="bg-main border-secondary border-2 rounded-full px-4 py-1.5 inline-flex items-center gap-4">
             <div className="bg-green-500 rounded-full size-2.5"></div>
             <div className="text-sm font-medium">
               Available for new projects
@@ -32,7 +32,7 @@ export const HeroSection = () => {
             <span className="font-semibold">Explore my work</span>
             <ArrowDown className="size-4" />
           </button>
-          <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 rounded-full px-6">
+          <button className="inline-flex items-center gap-2 bg-secondary text-main   h-12 rounded-full px-6">
             <span>👋</span>
             <span className="font-semibold">Let&apos; s connect</span>
           </button>

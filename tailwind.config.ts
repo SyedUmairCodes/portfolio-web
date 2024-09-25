@@ -23,8 +23,8 @@ const config: Config = {
     extend: {
       fontFamily: { sans: "var(--font-sans)" },
       colors: {
-        main: "#15161A",
-        secondary: "#343539",
+        main: "#001019",
+        secondary: "#9CD9FF",
         stripe: "#1b81ef",
       },
     },

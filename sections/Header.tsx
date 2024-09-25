@@ -14,7 +14,7 @@ export const Header = () => {
         </Link>
         <Link
           href="#contact"
-          className="nav-item text-gray-900 bg-white hover:bg-white/70 hover:text-gray-900"
+          className="nav-item text-main bg-secondary hover:bg-secondary/90 hover:text-main"
         >
           Contact
         </Link>
