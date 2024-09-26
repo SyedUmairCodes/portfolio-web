@@ -48,7 +48,7 @@ export const ProjectsSection = () => {
     <section className="pb-16" id="projects">
       <div className="container -mt-15">
         <div className="flex justify-center">
-          <p className="uppercase font-semibold tracking-widest text-neutral-300 text-center">
+          <p className="uppercase font-semibold tracking-widest text-secondary text-center">
             Recent Works
           </p>
         </div>
