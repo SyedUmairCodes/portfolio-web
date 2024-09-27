@@ -37,11 +37,11 @@ export const AboutSection = () => {
               <div className="flex flex-col">
                 <div className="inline-flex items-center gap-2">
                   <StarIcon className="size-9 text-secondary" />
-                  <h3 className="text-3xl sm:text-2xl">Current Projects</h3>
+                  <h3 className="text-3xl sm:text-2xl">Read My Blog</h3>
                 </div>
                 <p className=" text-sm mt-2">
-                  Currently pursuing my bachelor&apos;s degree in Computer
-                  Science and working on my final year project.
+                  Read about the things that intrest me and the daily adventures
+                  I have while building software.
                 </p>
               </div>
               <div className="w-40 mx-auto mt-6">

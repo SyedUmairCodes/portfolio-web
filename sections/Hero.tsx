@@ -12,7 +12,9 @@ export const HeroSection = () => {
             alt="header image"
           />
           <div className="bg-main border-secondary border-2 rounded-full px-4 py-1.5 inline-flex items-center gap-4">
-            <div className="bg-green-500 rounded-full size-2.5"></div>
+            <div className="bg-green-500 rounded-full size-2.5 relative">
+              <div className="bg-green-500 absolute inset-0 rounded-full animate-ping"></div>
+            </div>
             <div className="text-sm font-medium">
               Available for new projects
             </div>
