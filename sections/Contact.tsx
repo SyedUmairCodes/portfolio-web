@@ -1,7 +1,7 @@
 import Arrow from "@/public/assets/icons/arrow-up-right.svg";
 export const ContactSection = () => {
   return (
-    <div className="py-16 pt-14">
+    <div className="py-16 pt-14" id="contact">
       <div className="container">
         <div className="bg-secondary text-main py-8 px-10 rounded-3xl text-center">
           <h2 className="text-2xl font-semibold">

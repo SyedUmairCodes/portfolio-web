@@ -5,7 +5,7 @@ import StarIcon from "@/public/assets/icons/star.svg";
 import Emoji from "@/public/assets/images/Me.png";
 export const AboutSection = () => {
   return (
-    <section className="py-20 lg:py-22">
+    <section className="py-20 lg:py-22" id="about">
       <div className="container">
         <p className="uppercase font-semibold tracking-widest text-secondary text-center">
           About Me
